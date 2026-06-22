@@ -60,6 +60,12 @@ class Router {
   }
 
   start() {
+    const redirect = sessionStorage.getItem("spa-path");
+    if (redirect) {
+      sessionStorage.removeItem("spa-path");
+      history.replaceState({}, "", redirect);
+    }
+
     const path = this.normalizePath(location.pathname);
     const app = document.getElementById("app");
 
@@ -73,11 +79,7 @@ class Router {
       path === "/" &&
       (location.pathname === "/" || location.pathname === "/index.html");
 
-    const onBlogPage =
-      path === "/blog" &&
-      (location.pathname === "/blog" || location.pathname.startsWith("/blog/"));
-
-    if (onHomePage || onBlogPage) {
+    if (onHomePage) {
       app.dataset.route = path;
       return;
     }
