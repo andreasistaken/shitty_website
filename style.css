@@ -224,6 +224,21 @@ main {
     51%, 100% { opacity: 0; }
 }
 
+.ai-note {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8125rem;
+    color: #8a8580;
+    text-align: center;
+    position: relative;
+    bottom: -23vw;
+    transition: color 0.2s ease;
+}
+
+.ai-note:hover {
+    color: black;
+}
+
+
 /* Responsive */
 
 @media (max-width: 480px) {
