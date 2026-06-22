@@ -161,7 +161,21 @@ main {
 
 .link-arrow {
     color: #8a8580;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;/*----------BLOG.HTML---------*/
+
+.under-construction {
+    font-family: 'Syne', sans-serif;
+    color: black;
+}
+
+.return {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.return:hover {
+    color: blue;
+}
 }
 
 .link-item:hover .link-title {
@@ -183,6 +197,22 @@ main {
     font-family: 'Syne', sans-serif;
     font-size: 0.8125rem;
     color: #8a8580;
+}
+
+/*----------BLOG.HTML---------*/
+
+.under-construction {
+    font-family: 'Syne', sans-serif;
+    color: black;
+}
+
+.return {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.return:hover {
+    color: blue;
 }
 
 /* Responsive */
