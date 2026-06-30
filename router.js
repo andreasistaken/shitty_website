@@ -1,6 +1,6 @@
 const router = new Router({
   "/": "index.html",
-  "/blog": "blog.html",
+  "/projects": "projects.html"
 });
 
 router.start();
