@@ -27,6 +27,9 @@ class Router {
     }
     if (path === "/blog.html" || path.endsWith("/blog.html")) return "/blog";
     return path;
+  
+    if (path === "/projects.html" || path.endsWith("/projects.html")) return "/projects";
+    return path;
   }
 
   async loadRoute(path) {
