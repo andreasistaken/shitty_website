@@ -1,6 +1,6 @@
 const router = new Router({
-  "/": "index.html",
-  "/projects": "projects.html",
+  "/gr": "index.html",
+  "/gr/projects": "projects.html",
   "/en": "index-en.html",
   "/en/projects" : "projects-en.html"
 });
