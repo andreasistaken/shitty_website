@@ -1,9 +1,7 @@
 const router = new Router({
-  "/" : ""
-  "/gr": "index.html",
-  "/gr/projects": "projects.html",
+  "/": "index.html",
+  "/projects": "projects.html",
   "/en": "index-en.html",
-  "/en/projects" : "projects-en.html"
 });
 
 router.start();
